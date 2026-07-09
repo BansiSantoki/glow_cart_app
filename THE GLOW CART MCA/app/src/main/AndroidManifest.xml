@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity android:name=".Activity_mackupcombo"></activity>
+        <activity android:name=".Activity_hairshampoo" />
+        <activity android:name=".Activity_haircare" />
+        <activity android:name=".Activity_harecare" />
+        <activity android:name=".Activity_skincarrecombo" />
+        <activity android:name=".Activity_nailscombo" />
+        <activity android:name=".Activity_combohaircare" />
+        <activity android:name=".acitivity_skincarecombo" />
+        <activity android:name=".activity_haircarecombo" />
+        <activity android:name=".activity_mackupcombo" />
+        <activity android:name=".Activity_suncareCombo" />
+        <activity android:name=".Activity_Allcombo" />
+        <activity android:name=".Combo_activity" />
+        <activity android:name=".combomodel" />
+        <activity android:name=".All_combos" />
+        <activity android:name=".splash_screen" />
+        <activity android:name="com.example.yourappname.SplashActivity" />
+        <activity android:name=".bg_gradient" />
+        <activity android:name=".Activity_Artificialnails" />
+        <activity android:name=".Activity_Nailtools" />
+        <activity android:name=".Activity_Bodycream" />
+        <activity android:name=".Activity_Facecream" />
+        <activity android:name=".Activity_nailremover" />
+        <activity android:name=".Activity_nailpaint" />
+        <activity android:name=".Activity_Hairtools" />
+        <activity android:name=".Activity_hairserum" />
+        <activity android:name=".Activity_Hairspray" />
+        <activity android:name=".Activity_Haircolor" />
+        <activity android:name=".Activity_Hairoil" />
+        <activity android:name=".Activity_Hairshampoo" />
+        <activity android:name=".Activity_skintools" />
+        <activity android:name=".Activity_skinserum" />
+        <activity android:name=".Activity_Mask" />
+        <activity android:name=".Activity_Facewipes" />
+        <activity android:name=".Activity_Facewash" />
+        <activity android:name=".Activity_Mtools" />
+        <activity android:name=".Activity_Lips" />
+        <activity android:name=".Activity_Eye" />
+        <activity android:name=".Activity_Face" />
+        <activity android:name=".Activity_Female" />
+        <activity android:name=".Activity_Nails" />
+        <activity android:name=".Activity_Suncare" />
+        <activity android:name=".Activity_order" />
+        <activity android:name=".Activity_cart" />
+        <activity android:name=".Activity_Haircare" />
+        <activity android:name=".Activity_Skincare" />
+        <activity android:name=".Activity_Makeup" />
+        <activity android:name=".Activity_changepwd" />
+        <activity android:name=".Activity_forgot" />
+        <activity android:name=".Activity_Register" />
+        <activity android:name=".Activity_Home" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
