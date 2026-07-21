@@ -1,0 +1,40 @@
+package com.example.myapplication
+
+import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+
+class Activity_mackeupcombo : AppCompatActivity() {
+
+    lateinit var mqty1: EditText
+    lateinit var mqty2: EditText
+    lateinit var madd1: Button
+    lateinit var madd2: Button
+    lateinit var mcart: Button
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_mackupcombo)
+
+        mqty1 = findViewById(R.id.mqty1)
+        mqty2 = findViewById(R.id.mqty2)
+        madd1 = findViewById(R.id.madd1)
+        madd2 = findViewById(R.id.madd2)
+        mcart = findViewById(R.id.mcart)
+
+        madd1.setOnClickListener {
+            Toast.makeText(this,"Added Foundation Combo x ${mqty1.text}",Toast.LENGTH_SHORT).show()
+        }
+
+        madd2.setOnClickListener {
+            Toast.makeText(this,"Added Lipstick+Kajal x ${mqty2.text}",Toast.LENGTH_SHORT).show()
+        }
+
+        mcart.setOnClickListener {
+            Toast.makeText(this,"Opening Cart...",Toast.LENGTH_LONG).show()
+            // startActivity(Intent(this,Activity_cart::class.java))
+        }
+    }
+}
