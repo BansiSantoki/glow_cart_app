@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".Activity_Allcombo">
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/top_glass"
+        android:elevation="10dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:text="✨ All Combo Collection"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_weight="1" />
+
+        <!-- 🔥 New Added Text -->
+        <TextView
+            android:text="ALL COMBOS"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingEnd="16dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingRight="16dp" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:background="@drawable/pink_btn"
+            android:text="LOGOUT"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+
+    <!-- MAIN SCROLL LIST -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- ☆ CARD : Suncare Combo -->
+            <LinearLayout
+                android:id="@+id/card_suncare"
+                android:background="@drawable/glass_card"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:elevation="10dp"
+                android:padding="16dp"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:src="@drawable/suncare"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Suncare Combo"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:text="SUNCARE COMBO"
+                    android:textColor="#ffffff"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp" />
+            </LinearLayout>
+
+
+            <!-- ☆ Makeup Combo -->
+            <LinearLayout
+                android:id="@+id/card_makeup"
+                android:background="@drawable/glass_card"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:elevation="10dp"
+                android:padding="16dp"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:src="@drawable/mackup"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Makeup Combo"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:text="MAKEUP COMBO"
+                    android:textColor="#ffffff"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp" />
+            </LinearLayout>
+
+
+            <!-- ☆ Haircare Combo -->
+            <LinearLayout
+                android:id="@+id/card_haircare"
+                android:background="@drawable/glass_card"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:elevation="10dp"
+                android:padding="16dp"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:src="@drawable/haircare"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Hair Combo"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:text="HAIRCARE COMBO"
+                    android:textColor="#ffffff"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <!-- ☆ Skincare Combo -->
+            <LinearLayout
+                android:id="@+id/card_skincare"
+                android:background="@drawable/glass_card"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:elevation="10dp"
+                android:padding="16dp"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:src="@drawable/skincare"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Skincare Combo"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:text="SKINCARE COMBO"
+                    android:textColor="#ffffff"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp" />
+            </LinearLayout>
+
+
+            <!-- ☆ Nails Combo -->
+            <LinearLayout
+                android:id="@+id/card_nails"
+                android:background="@drawable/glass_card"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:elevation="10dp"
+                android:padding="16dp"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:src="@drawable/nails"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Nails Combo"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:text="NAILS COMBO"
+                    android:textColor="#ffffff"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

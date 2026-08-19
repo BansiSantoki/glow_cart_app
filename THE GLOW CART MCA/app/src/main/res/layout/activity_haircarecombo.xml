@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_haircarecombo"
+    android:background="#F8F8FF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="24dp">
+
+            <!-- HEADER -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:background="#673AB7"
+                android:elevation="6dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="💚 Hair Care Combo"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"/>
+
+                <Button
+                    android:id="@+id/btnLogout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Logout"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:backgroundTint="#673AB7"/>
+            </LinearLayout>
+
+            <!-- *************** Combo 1 *************** -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:background="#FFFFFF">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/himg1"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/haircarecombo"
+                        android:layout_marginRight="16dp" /> <!-- ADD IMAGE -->
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:text="Hair Oil + Shampoo Combo"
+                            android:textColor="#333333"
+                            android:textSize="18sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:text="Price: ₹749"
+                            android:textColor="#9C27B0"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_marginBottom="12dp"/>
+
+                        <LinearLayout android:orientation="horizontal">
+                            <TextView
+                                android:text="Qty:"
+                                android:textSize="16sp"
+                                android:textColor="#9C27B0"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp" />
+
+                            <EditText
+                                android:id="@+id/hqty1"
+                                android:layout_width="60dp"
+                                android:layout_height="40dp"
+                                android:text="0"
+                                android:gravity="center"
+                                android:inputType="number" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/hadd1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="Add to Cart"
+                            android:textColor="@android:color/white"
+                            android:backgroundTint="#673AB7"
+                            android:layout_marginTop="10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- *************** Combo 2 *************** -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:background="#FFFFFF">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:id="@+id/himg2"
+                        android:layout_marginEnd="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/haircarecombo2"
+                        android:layout_marginRight="16dp" /> <!-- ADD IMAGE -->
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:text="Keratin Smooth + Conditioner"
+                            android:textColor="#333333"
+                            android:textSize="18sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:text="Price: ₹899"
+                            android:textColor="#673AB7"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_marginBottom="12dp"/>
+
+                        <LinearLayout android:orientation="horizontal">
+                            <TextView
+                                android:text="Qty:"
+                                android:textSize="16sp"
+                                android:textColor="#9C27B0"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp" />
+
+                            <EditText
+                                android:id="@+id/hqty2"
+                                android:layout_width="60dp"
+                                android:layout_height="40dp"
+                                android:text="0"
+                                android:gravity="center"
+                                android:inputType="number"/>
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/hadd2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="Add to Cart"
+                            android:textColor="@android:color/white"
+                            android:backgroundTint="#673AB7"
+                            android:layout_marginTop="10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- CART BUTTON -->
+            <Button
+                android:id="@+id/hcart"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="🛒 Go To Cart"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:backgroundTint="#673AB7"
+                android:layout_margin="18dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F2F5"
+    tools:context=".Activity_Artificialnails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- 1. Header Section -->
+            <RelativeLayout
+                android:id="@+id/headerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/screenTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Artificial Nails Collection"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/btnlogout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Logout"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="#FF5722"
+                    app:cornerRadius="6dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <!-- 2. Search Bar -->
+            <EditText
+                android:id="@+id/searchEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Search Nails..."
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:background="@drawable/rounded_edittext_bg"
+                android:drawableStart="@android:drawable/ic_search_category_default"
+                android:drawableTint="#9E9E9E"
+                android:drawablePadding="8dp"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:layout_marginBottom="24dp"
+                android:drawableLeft="@android:drawable/ic_search_category_default" />
+
+            <!-- 3. Product Card 1: French Tip Nails Set -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <ImageButton
+                        android:id="@+id/imageButton1"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:scaleType="centerCrop"
+                        android:background="@null"
+                        android:layout_marginEnd="12dp"
+                        app:srcCompat="@drawable/purplecolor"
+                        android:layout_marginRight="12dp" /> <!-- સુધારેલ નામ -->
+                    android:layout_marginRight="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="French Tip Nails Set"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="#212121"
+                            android:layout_marginBottom="4dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Price: ₹ 599"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#E91E63"
+                            android:layout_marginBottom="8dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Qty: "
+                                android:textColor="#444444"
+                                android:textSize="14sp"
+                                android:layout_marginEnd="4dp"
+                                android:layout_marginRight="4dp" />
+
+                            <EditText
+                                android:id="@+id/editText1"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:inputType="number"
+                                android:text="1"
+                                android:gravity="center"
+                                android:background="@drawable/qty_edittext_bg"
+                                android:padding="4dp"
+                                android:layout_marginEnd="8dp"
+                                android:textSize="14sp"
+                                android:layout_marginRight="8dp" />
+
+                            <Button
+                                android:id="@+id/btnAddProduct1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:text="Add to Cart"
+                                android:textSize="12sp"
+                                android:textColor="@android:color/white"
+                                android:backgroundTint="#00BCD4"
+                                app:cornerRadius="6dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 4. Product Card 2: Reusable Gel Press-Ons -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:scaleType="centerCrop"
+                        android:background="@null"
+                        android:layout_marginEnd="12dp"
+                        app:srcCompat="@drawable/purplecolor"
+                        android:layout_marginRight="12dp" />
+                    <!-- સુધારેલ નામ -->
+                    android:layout_marginRight="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Reusable Gel Press-Ons"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="#212121"
+                            android:layout_marginBottom="4dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Price: ₹ 780"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#E91E63"
+                            android:layout_marginBottom="8dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Qty: "
+                                android:textColor="#444444"
+                                android:textSize="14sp"
+                                android:layout_marginEnd="4dp"
+                                android:layout_marginRight="4dp" />
+
+                            <EditText
+                                android:id="@+id/editText2"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:inputType="number"
+                                android:text="1"
+                                android:gravity="center"
+                                android:background="@drawable/qty_edittext_bg"
+                                android:padding="4dp"
+                                android:layout_marginEnd="8dp"
+                                android:textSize="14sp"
+                                android:layout_marginRight="8dp" />
+
+                            <Button
+                                android:id="@+id/btnAddProduct2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:text="Add to Cart"
+                                android:textSize="12sp"
+                                android:textColor="@android:color/white"
+                                android:backgroundTint="#00BCD4"
+                                app:cornerRadius="6dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 5. Go to Cart Button (Final CTA) -->
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Go to Cart"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:backgroundTint="#4CAF50"
+                app:cornerRadius="10dp"
+                android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

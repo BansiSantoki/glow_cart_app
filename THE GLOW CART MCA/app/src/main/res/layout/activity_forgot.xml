@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B1225" tools:context=".Activity_forgot">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp"
+            android:background="@drawable/rounded_dark_card"
+            android:elevation="12dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <TextView
+                android:text="Forgot Password?"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:text="Verify your identity using your security question."
+                android:textSize="14sp"
+                android:textColor="#A0A0A0"
+                android:gravity="center"
+                android:layout_marginBottom="40dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLayoutUsername"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="#1F2937" app:boxStrokeColor="#6A5ACD"
+                app:hintTextColor="#6A5ACD"
+                app:boxCornerRadiusTopStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusBottomEnd="10dp"
+                android:hint="Username"
+                android:textColorHint="#D1D5DB"
+                android:layout_marginBottom="18dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLayoutSecurityQuestion"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="#1F2937"
+                app:boxStrokeColor="#6A5ACD"
+                app:hintTextColor="#6A5ACD"
+                app:boxCornerRadiusTopStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusBottomEnd="10dp"
+                android:hint="Select Security Question"
+                android:textColorHint="#D1D5DB"
+                app:endIconMode="dropdown_menu"
+                android:layout_marginBottom="18dp">
+
+                <Spinner
+                    android:id="@+id/spnsque"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:spinnerMode="dropdown"
+                    android:background="@android:color/transparent"
+                    tools:entries="@array/security_questions_array"
+                    android:theme="@style/SpinnerThemeDark"/> </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLayoutAnswer"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="#1F2937"
+                app:boxStrokeColor="#6A5ACD"
+                app:hintTextColor="#6A5ACD"
+                app:boxCornerRadiusTopStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusBottomEnd="10dp"
+                android:hint="Enter Security Answer"
+                android:textColorHint="#D1D5DB"
+                android:layout_marginBottom="40dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtsans"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnok"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Verify &amp; Reset Password"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#6A5ACD"
+                app:cornerRadius="10dp"
+                android:elevation="5dp"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
